@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine.dll">
+      <HintPath>dll/UnityEngine.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion> 
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule.dll">
+      <HintPath>dll/UnityEngine.CoreModule.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion> 
+    </Reference>
+    <Reference Include="UnityEngine.UI.dll">
+      <HintPath>dll/UnityEngine.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion> 
+    </Reference>
+    <Reference Include="TenCrowns.GameCore.dll">
+      <HintPath>dll/TenCrowns.GameCore.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion> 
+    </Reference>
+  </ItemGroup>
+
+</Project>

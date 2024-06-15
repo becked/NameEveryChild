@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_HELPTEXT_DECISION_NAME_CHOOSE_NAME</zType>
+		<en-US>Choose a name for your newborn child.</en-US>
+		<es>Elige un nombre para tu futuro heredero.</es>
+		<de>Wähle einen Namen für dein neugeborenes Kind.</de>
+		<fr>Choisissez un prénom pour votre {masculine_0:nouveau-né:nouveau-née}.</fr>
+		<ja>あなたの新生児のために名前を選んでください.</ja>
+		<zh-TW>為你的新生兒選一個名字。</zh-TW>
+		<ru>Выберите имя для вашего новорожденного ребенка.</ru>
+		<zh-CN>为你的新生儿选一个名字。</zh-CN>
+		<pt-BR>Escolha um nome para o seu recém-nascido.</pt-BR>
+	</Entry>
+</Root>

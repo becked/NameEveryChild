@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Name Every Child</displayName>
+  <description>
+  Why stop at naming your heir? A true ruler names every child!
+
+  This mod triggers the event to name a child every time, instead of just for your character's heir. I love when my future leaders have a generational name suffix and 100 turns in I'm playing as Hanno III. But so often in this game, kids die or run away or who knows what. Triggering this event on each child will increase the chances of a high generational suffix.
+  </description>
+  <modpicture>NameEveryChild.png</modpicture>
+  <author>becked</author>
+  <modplatform>Modio</modplatform>
+  <modioID>4083305</modioID>
+  <modioFileID>0</modioFileID>
+  <workshopOwnerID>76561199101298499</workshopOwnerID>
+  <workshopFileID>3268530172</workshopFileID>
+  <modversion>0.0.1</modversion>
+  <modbuild>1.0.72492</modbuild>
+  <tags>Character</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>
