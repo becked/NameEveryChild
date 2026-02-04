@@ -4,8 +4,8 @@
 
 ### Changed
 - Converted from GameFactory to Harmony patching for mod compatibility
-- Now compatible with other DLL mods
 - Uses Harmony 2.4.2 for Apple Silicon (M1/M2/M3) Mac support
+- New mod illustration
 
 ### Fixed
 - Naming events now respect "No Events" game setting
