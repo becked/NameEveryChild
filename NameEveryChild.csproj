@@ -1,29 +1,50 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <OutputType>library</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>NameEveryChild</AssemblyName>
+    <RootNamespace>NameEveryChild</RootNamespace>
+    <LangVersion>9.0</LangVersion>
+    <OutputType>Library</OutputType>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin/</OutputPath>
+  </PropertyGroup>
+
+  <!-- Platform-specific paths to game assemblies -->
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <OldWorldManagedPath>$(OldWorldPath)\OldWorld_Data\Managed</OldWorldManagedPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
+    <OldWorldManagedPath>$(OldWorldPath)/OldWorld.app/Contents/Resources/Data/Managed</OldWorldManagedPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
+    <OldWorldManagedPath>$(OldWorldPath)/OldWorld_Data/Managed</OldWorldManagedPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="UnityEngine.dll">
-      <HintPath>dll/UnityEngine.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion> 
+    <Compile Include="Source/**/*.cs" />
+  </ItemGroup>
+
+  <!-- Harmony via NuGet -->
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
+  </ItemGroup>
+
+
+  <!-- Game assembly references -->
+  <ItemGroup>
+    <Reference Include="TenCrowns.GameCore">
+      <HintPath>$(OldWorldManagedPath)/TenCrowns.GameCore.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule.dll">
-      <HintPath>dll/UnityEngine.CoreModule.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion> 
+    <Reference Include="UnityEngine">
+      <HintPath>$(OldWorldManagedPath)/UnityEngine.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI.dll">
-      <HintPath>dll/UnityEngine.UI.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion> 
-    </Reference>
-    <Reference Include="TenCrowns.GameCore.dll">
-      <HintPath>dll/TenCrowns.GameCore.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion> 
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(OldWorldManagedPath)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
 

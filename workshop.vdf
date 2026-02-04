@@ -1,0 +1,30 @@
+"workshopitem"
+{
+	"appid"		"597180"
+	"publishedfileid"		"3268530172"
+	"contentfolder"		"./workshop_content"
+	"previewfile"		"./NameEveryChild.png"
+	"visibility"		"0"
+	"title"		"Name Every Child"
+	"description"		"Why stop at naming your heir? A true ruler names every child!
+
+This mod triggers the event to name a child every time, instead of just for your character's heir. I love when my future leaders have a generational name suffix and 100 turns in I'm playing as Hanno III. But so often in this game, kids die or run away or who knows what. Triggering this event on each child will increase the chances of a high generational suffix.
+
+[h1]Features[/h1]
+[list]
+[*] Triggers naming event for ALL leader's children, not just the heir
+[*] Respects the 'No Events' game setting
+[*] Compatible with other DLL mods (uses Harmony patching)
+[/list]
+
+[h1]Compatibility[/h1]
+Uses Harmony patching, so it works alongside other mods that also use Harmony.
+
+[h1]Source Code[/h1]
+[url=https://github.com/becked/NameEveryChild]GitHub Repository[/url]"
+	"changenote"		"Initial release"
+	"tags"
+	{
+		"0"		"Character"
+	}
+}
